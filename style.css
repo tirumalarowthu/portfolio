@@ -146,6 +146,31 @@ a:hover {
     transform: none;
 }
 
+/* name animations */
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    letter-spacing: 0.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #2c3e50;
+    width: fit-content;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+
 /* SECTIONS */
 
 section {
